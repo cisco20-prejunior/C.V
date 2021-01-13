@@ -4,8 +4,11 @@
     --secondary-color: #2f5bba;
     --img-height: 230px;
     --img-width: 200px;
+<<<<<<< HEAD
     --img-height-small: 130px;
     --img-width-small: 110px;
+=======
+>>>>>>> 01b871965d17c4073e1f9dc36eff475467569535
 }
 * {
     margin: 0;
