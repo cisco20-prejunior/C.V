@@ -179,6 +179,9 @@
     .primaria__parrafo {
         font-size: 1.5em;
     }
+    .primaria__img {
+        margin-right: 10px;
+    }
     .educacion__primaria:hover {
         width: 95%;
         transform: perspective(300px) translateZ(10px);
@@ -193,6 +196,9 @@
     .secundaria__parrafo {
         font-size: 1.5em;
     }
+    .secundaria__img {
+        margin-right: 10px;
+    }
     .educacion__secundaria:hover {
         width: 95%;
         transform: perspective(300px) translateZ(10px);
@@ -206,6 +212,9 @@
     }
     .superior__parrafo {
         font-size: 1.5em;
+    }
+    .superior__img {
+        margin-right: 10px;
     }
     .educacion__superior:hover {
         width: 95%;
