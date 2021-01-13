@@ -216,7 +216,6 @@
         -o-transform: perspective(300px) translateZ(10px);
     }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 550px) {
     .primaria__h3 {
         font-size: 1.5em;
@@ -252,5 +251,3 @@
         width: var(--img-width-small);
     }
 }
-=======
->>>>>>> 01b871965d17c4073e1f9dc36eff475467569535
