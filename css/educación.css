@@ -1,0 +1,215 @@
+/* Educación */
+.importante__educacion {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 4em;
+}
+
+.importante__educacion > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.educacion__h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1.2em;
+}
+/* Educación Primaria */
+.educacion__primaria {
+    display: grid;
+    background-color: #628c9691;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo titulo titulo" "texto texto imagen";
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.426);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.educacion__primaria:hover {
+    width: 70%;
+    transform: perspective(300px) translateZ(10px);
+    -webkit-transform: perspective(300px) translateZ(10px);
+    -moz-transform: perspective(300px) translateZ(10px);
+    -ms-transform: perspective(300px) translateZ(10px);
+    -o-transform: perspective(300px) translateZ(10px);
+}
+.primaria__parrafo {
+    grid-area: texto;
+    display: flex;
+    font-size: 1.8em;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.primaria__h3 {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.3em;
+}
+.primaria__img {
+    grid-area: imagen;
+    margin: auto;
+    margin-bottom: 10px;
+    width: var(--img-width);
+    height: var(--img-height);
+}
+/* Educación secundaria */
+.educacion__secundaria {
+    display: grid;
+    background-color: #96626291;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "tituloS tituloS tituloS" "textoS textoS imagenS";
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.426);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.educacion__secundaria:hover {
+    width: 70%;
+    transform: perspective(300px) translateZ(10px);
+    -webkit-transform: perspective(300px) translateZ(10px);
+    -moz-transform: perspective(300px) translateZ(10px);
+    -ms-transform: perspective(300px) translateZ(10px);
+    -o-transform: perspective(300px) translateZ(10px);
+}
+.secundaria__parrafo {
+    grid-area: textoS;
+    display: flex;
+    font-size: 1.8em;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.secundaria__h3 {
+    grid-area: tituloS;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.3em;
+}
+.secundaria__img {
+    grid-area: imagenS;
+    margin: auto;
+    margin-bottom: 10px;
+    width: var(--img-width);
+    height: var(--img-height);
+}
+/* Educación superior  */
+.educacion__superior {
+    display: grid;
+    background-color: #939662c7;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "tituloSu tituloSu tituloSu" "textoSu textoSu imagenSu";
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.426);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.educacion__superior:hover {
+    width: 70%;
+    transform: perspective(300px) translateZ(10px);
+    -webkit-transform: perspective(300px) translateZ(10px);
+    -moz-transform: perspective(300px) translateZ(10px);
+    -ms-transform: perspective(300px) translateZ(10px);
+    -o-transform: perspective(300px) translateZ(10px);
+}
+.superior__parrafo {
+    grid-area: textoSu;
+    display: flex;
+    font-size: 1.8em;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.superior__h3 {
+    grid-area: tituloSu;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.3em;
+}
+.superior__img {
+    grid-area: imagenSu;
+    margin: auto;
+    margin-bottom: 10px;
+    width: var(--img-width);
+    height: var(--img-height);
+}
+@media screen and (max-width: 900px) {
+    .educacion__primaria {
+        width: 95%;
+    }
+    .primaria__parrafo {
+        font-size: 1.5em;
+    }
+    .educacion__primaria:hover {
+        width: 95%;
+        transform: perspective(300px) translateZ(10px);
+        -webkit-transform: perspective(300px) translateZ(10px);
+        -moz-transform: perspective(300px) translateZ(10px);
+        -ms-transform: perspective(300px) translateZ(10px);
+        -o-transform: perspective(300px) translateZ(10px);
+    }
+    .educacion__secundaria {
+        width: 90%;
+    }
+    .secundaria__parrafo {
+        font-size: 1.5em;
+    }
+    .educacion__secundaria:hover {
+        width: 95%;
+        transform: perspective(300px) translateZ(10px);
+        -webkit-transform: perspective(300px) translateZ(10px);
+        -moz-transform: perspective(300px) translateZ(10px);
+        -ms-transform: perspective(300px) translateZ(10px);
+        -o-transform: perspective(300px) translateZ(10px);
+    }
+    .educacion__superior {
+        width: 90%;
+    }
+    .superior__parrafo {
+        font-size: 1.5em;
+    }
+    .educacion__superior:hover {
+        width: 95%;
+        transform: perspective(300px) translateZ(10px);
+        -webkit-transform: perspective(300px) translateZ(10px);
+        -moz-transform: perspective(300px) translateZ(10px);
+        -ms-transform: perspective(300px) translateZ(10px);
+        -o-transform: perspective(300px) translateZ(10px);
+    }
+}
