@@ -1,0 +1,38 @@
+@import url("educación.css");
+:root {
+    --primary-color: #aa5fa9;
+    --secondary-color: #2f5bba;
+    --img-height: 230px;
+    --img-width: 200px;
+    --img-height-small: 130px;
+    --img-width-small: 110px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    align-items: center;
+    justify-content: space-around;
+}
+.banner__img {
+    height: 80vh;
+    width: 40vw;
+    border: solid 1px red;
+}
+.banner__nombre {
+    font-size: 3.5em;
+}
+
+/* importante */
+.importante {
+    background-color: blanchedalmond;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
