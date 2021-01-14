@@ -15,24 +15,43 @@
 .banner {
     height: 100vh;
     display: flex;
-    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.138),
+            rgba(0, 0, 0, 0.782)
+        ),
+        url(../img/banner-background-1.png);
+    background-size: cover;
+    background-position: center;
     align-items: center;
     justify-content: space-around;
 }
-.banner__img {
-    height: 80vh;
-    width: 40vw;
-    border: solid 1px red;
-}
+
 .banner__nombre {
+    text-align: center;
     font-size: 3.5em;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.871);
+    background-color: rgba(0, 0, 0, 0.255);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 20px black;
 }
 
 /* importante */
 .importante {
-    background-color: blanchedalmond;
+    background-color: rgb(228, 231, 248);
     height: 300vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.316),
+            rgba(255, 255, 255, 0.282)
+        ),
+        url(../img/wooden-bg-main.jpg);
+    background-size: cover;
+    background-position: center;
 }
