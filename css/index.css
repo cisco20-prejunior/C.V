@@ -19,7 +19,7 @@
             rgba(0, 0, 0, 0.138),
             rgba(0, 0, 0, 0.782)
         ),
-        url(../img/banner-background.png);
+        url(../img/banner-background.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -31,13 +31,13 @@
     font-size: 3.5em;
     padding: 10px;
     color: rgba(255, 255, 255, 0.871);
-    background-color: rgba(0, 0, 0, 0.255);
+    background-color: rgba(0, 0, 0, 0.104);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 30px black;
 }
 
 /* importante */
@@ -49,9 +49,9 @@
     justify-content: space-evenly;
     background-image: linear-gradient(
             rgba(0, 0, 0, 0.316),
-            rgba(255, 255, 255, 0.282)
+            rgba(46, 46, 46, 0.159)
         ),
-        url(../img/wooden-bg-main.jpg);
+        url(../img/wood-wall-bg-main.jpg);
     background-size: cover;
     background-position: center;
 }
