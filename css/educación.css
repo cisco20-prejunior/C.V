@@ -13,14 +13,14 @@
 }
 .educacion__h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     margin-bottom: 1.2em;
     color: rgb(253, 253, 253);
 }
 /* Educación Primaria */
 .educacion__primaria {
     display: grid;
-    background-color: #baf2b8ee;
+    background-color: #688a74cd;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "titulo titulo titulo" "texto texto imagen";
@@ -72,7 +72,7 @@
 /* Educación secundaria */
 .educacion__secundaria {
     display: grid;
-    background-color: #f2b8b8f0;
+    background-color: #714940e3;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "tituloS tituloS tituloS" "textoS textoS imagenS";
@@ -124,7 +124,7 @@
 /* Educación superior  */
 .educacion__superior {
     display: grid;
-    background-color: #eff2b8ef;
+    background-color: #9a9d62d0;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "tituloSu tituloSu tituloSu" "textoSu textoSu imagenSu";

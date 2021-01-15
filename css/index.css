@@ -48,10 +48,21 @@
     flex-direction: column;
     justify-content: space-evenly;
     background-image: linear-gradient(
-            rgba(0, 0, 0, 0.316),
-            rgba(46, 46, 46, 0.159)
+            rgba(0, 0, 0, 0.768),
+            rgba(0, 0, 0, 0.405)
         ),
-        url(../img/wood-wall-bg-main.jpg);
+        url(../img/wood-wall.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 600px) {
+    .banner__nombre {
+        font-size: 2.7em;
+    }
+}
+@media screen and (max-width: 400px) {
+    .banner__nombre {
+        font-size: 2em;
+    }
 }
