@@ -85,7 +85,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: auto;
+    height: 110%;
     background-color: rgba(60, 88, 199, 0.707);
     border-radius: 40px;
     -webkit-border-radius: 40px;
@@ -99,8 +99,8 @@
     margin: auto;
 }
 .nova__img {
-    width: 230px;
-    height: 180px;
+    width: 40%;
+    height: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -115,7 +115,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: auto;
+    height: 110%;
     background-color: rgba(85, 151, 63, 0.768);
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -125,7 +125,7 @@
 }
 .enei__texto {
     color: white;
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin: auto;
 }
 .enei__img {
