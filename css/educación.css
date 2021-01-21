@@ -231,6 +231,9 @@
     }
 }
 @media screen and (max-width: 550px) {
+    .educacion__h2 {
+        font-size: 3em;
+    }
     .primaria__h3 {
         font-size: 1.5em;
         margin-top: 1em;

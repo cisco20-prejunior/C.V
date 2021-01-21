@@ -1,0 +1,129 @@
+/* Importante cursos */
+.importante__cursos {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo titulo" "nova enei";
+    position: relative;
+}
+.cursos__titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    height: min-content;
+}
+/* Sección del Nova */
+.cursos__nova {
+    grid-area: nova;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 120%;
+    background-color: rgba(37, 129, 141, 0.707);
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.nova__texto {
+    font-size: 1.5em;
+    color: white;
+    margin: auto;
+}
+.nova__img {
+    width: 40%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sección del Enei */
+.cursos__enei {
+    grid-area: enei;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 120%;
+    background-color: rgba(82, 150, 59, 0.768);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.enei__texto {
+    color: white;
+    font-size: 1.5em;
+    margin: auto;
+}
+.enei__img {
+    width: 30%;
+    height: 80%;
+    margin: auto;
+}
+@media screen and (max-width: 900px) {
+    .importante__cursos {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-gap: 5em;
+        grid-template-areas: "titulo" "nova" "enei";
+    }
+    .cursos__titulo {
+        margin-top: 1.2em;
+        margin-bottom: 0.8em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .cursos__titulo {
+        font-size: 3em;
+    }
+    .enei__texto {
+        font-size: 1.2em;
+    }
+    .nova__texto {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cursos__enei {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    .enei__texto {
+        font-size: 1em;
+    }
+    .cursos__nova {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    .nova__texto {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 400px) {
+    .enei__texto {
+        font-size: 0.8em;
+    }
+    .nova__texto {
+        font-size: 0.8em;
+    }
+}

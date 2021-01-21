@@ -1,0 +1,108 @@
+/* Hablidades */
+.importante__habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 6em;
+    grid-template-areas: "titulo titulo" "word excel" "ingles ingles";
+}
+.habilidad {
+    margin: auto;
+    font-size: 3em;
+    font-weight: 600;
+}
+.habilidades__titulo {
+    grid-area: titulo;
+    text-align: center;
+    color: white;
+    margin-top: 2em;
+    font-size: 3em;
+}
+.habilidades__img {
+    width: 150px;
+    height: 150px;
+}
+.habilidades__word {
+    color: white;
+    grid-area: word;
+    width: 80%;
+    position: relative;
+    border-bottom: 15px rgb(162, 162, 162) solid;
+    border-bottom-right-radius: 15px;
+}
+.habilidades__word::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    border-bottom: solid rgb(29, 58, 223) 15px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 0 20px 2px rgb(102, 119, 243);
+}
+.habilidades__excel {
+    color: white;
+    grid-area: excel;
+    width: 80%;
+    position: relative;
+    border-bottom: 15px rgb(162, 162, 162) solid;
+    border-bottom-right-radius: 15px;
+}
+.habilidades__excel::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border-bottom: solid rgb(52, 223, 29) 15px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 0 20px 2px rgb(52, 243, 102);
+}
+.habilidades__ingles {
+    color: white;
+    grid-area: ingles;
+    width: 45%;
+    position: relative;
+    border-bottom: 15px rgb(162, 162, 162) solid;
+    border-bottom-right-radius: 15px;
+}
+.habilidades__ingles::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-bottom: solid rgb(237, 50, 50) 15px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 0 20px 2px rgb(235, 112, 112);
+}
+@media screen and (max-width: 800px) {
+    .importante__habilidades {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 3em;
+        grid-template-areas: "titulo" "word" "excel" "ingles";
+    }
+    .habilidades__titulo {
+        font-size: 4em;
+    }
+    .habilidad {
+        font-size: 1.7em;
+    }
+    .habilidades__ingles {
+        width: 80%;
+    }
+    .habilidades__img {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .habilidades__titulo {
+        font-size: 3em;
+    }
+}
