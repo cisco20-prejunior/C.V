@@ -6,6 +6,7 @@
     --img-width: 200px;
     --img-height-small: 130px;
     --img-width-small: 110px;
+    --progress-width: 90%;
 }
 * {
     margin: 0;

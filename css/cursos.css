@@ -1,7 +1,7 @@
 /* Importante cursos */
 .importante__cursos {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "titulo titulo" "nova enei";
     position: relative;
@@ -11,8 +11,8 @@
     text-align: center;
     font-size: 4em;
     color: white;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 1.3em;
     height: min-content;
 }
 /* Sección del Nova */
@@ -22,10 +22,9 @@
     flex-flow: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: 120%;
+    margin: auto;
+    width: 85%;
+    height: 70%;
     background-color: rgba(37, 129, 141, 0.707);
     border-radius: 40px;
     -webkit-border-radius: 40px;
@@ -52,10 +51,9 @@
     flex-flow: row-reverse;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: 120%;
+    margin: auto;
+    width: 85%;
+    height: 70%;
     background-color: rgba(82, 150, 59, 0.768);
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -75,17 +73,29 @@
 }
 @media screen and (max-width: 900px) {
     .importante__cursos {
-        display: grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr;
-        grid-gap: 5em;
+        grid-gap: 3.5em;
         grid-template-areas: "titulo" "nova" "enei";
+    }
+    .cursos__nova {
+        width: 80%;
+        height: 100%;
+    }
+    .cursos__enei {
+        width: 80%;
+        height: 100%;
     }
     .cursos__titulo {
         margin-top: 1.2em;
         margin-bottom: 0.8em;
     }
+    .cursos__img {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
 }
+
 @media screen and (max-width: 600px) {
     .cursos__titulo {
         font-size: 3em;

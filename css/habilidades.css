@@ -30,16 +30,18 @@
     border-bottom: 15px rgb(162, 162, 162) solid;
     border-bottom-right-radius: 15px;
 }
-.habilidades__word::after {
+.habilidades__word__after::after {
     content: "";
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    animation: progress-bar 0.5s ease-in-out;
+    width: 90%;
     border-bottom: solid rgb(29, 58, 223) 15px;
     border-bottom-right-radius: 100px;
     box-shadow: 0 0 20px 2px rgb(102, 119, 243);
+    -webkit-animation: progress-bar 0.5s ease-in-out;
 }
 .habilidades__excel {
     color: white;
@@ -49,13 +51,13 @@
     border-bottom: 15px rgb(162, 162, 162) solid;
     border-bottom-right-radius: 15px;
 }
-.habilidades__excel::after {
+.habilidades__excel__after::after {
     content: "";
     display: block;
     position: absolute;
-    margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    animation: progress-bar 0.5s ease-in-out;
+    width: 90%;
     border-bottom: solid rgb(52, 223, 29) 15px;
     border-bottom-right-radius: 100px;
     box-shadow: 0 0 20px 2px rgb(52, 243, 102);
@@ -68,12 +70,12 @@
     border-bottom: 15px rgb(162, 162, 162) solid;
     border-bottom-right-radius: 15px;
 }
-.habilidades__ingles::after {
+.habilidades__ingles__after::after {
     content: "";
     display: block;
     position: absolute;
-    margin-left: auto;
     margin-right: auto;
+    animation: progress-bar 0.5s ease-in-out;
     width: 90%;
     border-bottom: solid rgb(237, 50, 50) 15px;
     border-bottom-right-radius: 100px;
@@ -104,5 +106,13 @@
 @media screen and (max-width: 600px) {
     .habilidades__titulo {
         font-size: 3em;
+    }
+}
+@keyframes progress-bar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
     }
 }
