@@ -18,6 +18,9 @@
     margin-top: 2em;
     font-size: 3em;
 }
+.habilidades__texto {
+    display: inline;
+}
 .habilidades__img {
     width: 150px;
     height: 150px;
@@ -30,16 +33,21 @@
     border-bottom: 15px rgb(162, 162, 162) solid;
     border-bottom-right-radius: 15px;
 }
+.habilidades__word__int {
+    margin: auto;
+    width: fit-content;
+}
+.habilidades__word__int > p {
+    display: inline;
+}
 .habilidades__word__after::after {
     content: "";
     display: block;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
     animation: progress-bar 0.5s ease-in-out;
     width: 90%;
-    border-bottom: solid rgb(29, 58, 223) 15px;
-    border-bottom-right-radius: 100px;
+    border-bottom: 15px rgb(29, 58, 223) solid;
+    border-bottom-right-radius: 15px;
     box-shadow: 0 0 20px 2px rgb(102, 119, 243);
     -webkit-animation: progress-bar 0.5s ease-in-out;
 }
