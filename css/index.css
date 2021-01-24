@@ -39,7 +39,7 @@
 /* importante */
 .importante {
     background-color: rgb(228, 231, 248);
-    height: auto;
+    height: 700vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
