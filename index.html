@@ -7,6 +7,11 @@
         <title>C.V María del Rosario Fuentes</title>
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/index.css" />
+        <!-- Font Awesome -->
+        <script
+        src="https://kit.fontawesome.com/65b1cfe81d.js"
+        crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <header class="banner">
@@ -65,9 +70,9 @@
                 <h2 class="cursos__titulo">Cursos</h2>
                 <div class="cursos__nova">
                     <p class="nova__texto">
-                        Instituto de Idiomas Nova
+                        Instituto de Idiomas
                         <br />
-                        Inglés Intermedio
+                        Nova Inglés Intermedio
                     </p>
                     <img
                         class="nova__img cursos__img"
@@ -119,33 +124,40 @@
                 </div>
             </article>
             <article class="importante__experiencia">
-                <h2>Experiencia Laboral</h2>
-                <p>
-                    POLLERIA PIO RICO - ICA | ASISTENTE ADM/ CAJERA
-                    <br />
-                    MAYO 2018 - ACTUALIDAD
-                </p>
-                <p>
-                    Tareas realizadas : Apoyo en el área administrativa,recibos,
-                    <br />
-                    facturas, planilla de los trabajadores, apoyando también en
-                    <br />
-                    el área de caja. • Manejo de caja • Conocimiento de planilla
-                    <br />
-                    • Atención al cliente
-                </p>
+                <h2 class="experiencia__titulo">Experiencia Laboral</h2>
+                <div class="experiencia__text">
+                    <h3 class="experiencia__trabajo">
+                        POLLERIA PIO RICO - ICA | ASISTENTE ADM/ CAJERA MAYO
+                        <br>
+                        2018 - ACTUALIDAD
+                    </h3>
+                    <p class="experiencia__trabajo__cont">
+                        Tareas realizadas : Apoyo en el área
+                        administrativa,recibos, facturas, planilla de los
+                        trabajadores, apoyando también en el área de caja.
+                        <br />
+                        • Manejo de caja
+                        <br />
+                        • Conocimiento de planilla
+                        <br />
+                        • Atención al cliente
+                    </p>
+                </div>
             </article>
         </main>
-        <footer class="footer">
-            <p>Información de contacto</p>
-            <ul class="footer__lista">
-                <li class="footer__lista__telefono">Número: 970048875</li>
-                <li class="footer__lista__correo">
-                    Correo Electrónico: charo_413@hotmail.com
-                </li>
-                <li class="footer__lista__dni">DNI: 70396973</li>
-            </ul>
-        </footer>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <form class="form">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"
+                    ><i class="fas fa-times"></i></a>
+                    <h2>CONTACT US</h2>
+                    <p type="Name:"><input placeholder="Write your name here.."></input></p>
+                    <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+                    <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+                    <button>Send Message</button>
+                </form>
+            </div>
+        </div>
         <script src="js/main.js" type="module"></script>
     </body>
 </html>

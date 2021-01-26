@@ -16,7 +16,7 @@
     text-align: center;
     color: white;
     margin-top: 2em;
-    font-size: 3em;
+    font-size: 4em;
 }
 .habilidades__texto {
     display: inline;
@@ -46,7 +46,7 @@
     position: absolute;
     animation: progress-bar 0.5s ease-in-out;
     width: 90%;
-    border-bottom: 15px rgb(29, 58, 223) solid;
+    border-bottom: 15px rgb(22, 42, 153) solid;
     border-bottom-right-radius: 15px;
     box-shadow: 0 0 20px 2px rgb(102, 119, 243);
     -webkit-animation: progress-bar 0.5s ease-in-out;
@@ -66,9 +66,9 @@
     margin-right: auto;
     animation: progress-bar 0.5s ease-in-out;
     width: 90%;
-    border-bottom: solid rgb(52, 223, 29) 15px;
+    border-bottom: solid rgb(39, 160, 23) 15px;
     border-bottom-right-radius: 100px;
-    box-shadow: 0 0 20px 2px rgb(52, 243, 102);
+    box-shadow: 0 0 20px 2px rgb(44, 199, 86);
 }
 .habilidades__ingles {
     color: white;
@@ -85,9 +85,9 @@
     margin-right: auto;
     animation: progress-bar 0.5s ease-in-out;
     width: 90%;
-    border-bottom: solid rgb(237, 50, 50) 15px;
+    border-bottom: solid rgb(220, 47, 47) 15px;
     border-bottom-right-radius: 100px;
-    box-shadow: 0 0 20px 2px rgb(235, 112, 112);
+    box-shadow: 0 0 20px 2px rgb(206, 92, 92);
 }
 @media screen and (max-width: 800px) {
     .importante__habilidades {

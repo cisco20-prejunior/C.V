@@ -1,0 +1,57 @@
+/* Experiencia laboral */
+.importante__experiencia {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    width: 80%;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.experiencia__titulo {
+    text-align: center;
+    font-size: 4em;
+    margin-top: 3em;
+    margin-bottom: 1.4em;
+}
+.experiencia__text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-flow: column;
+    background-color: rgba(120, 202, 39, 0.878);
+    text-align: center;
+    font-size: x-large;
+    height: 400px;
+    margin-bottom: 2em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.experiencia__trabajo__cont {
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 900px) {
+    .experiencia__titulo {
+        font-size: 3em;
+    }
+    .experiencia__text {
+        font-size: large;
+    }
+}
+@media screen and (max-width: 600px) {
+    .experiencia__text {
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 400px) {
+    .experiencia__text {
+        font-size: small;
+    }
+}
