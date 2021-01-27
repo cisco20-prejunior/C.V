@@ -22,18 +22,21 @@
             $ingles.classList.remove("habilidades__ingles__after")
         }
     })
-    let btnAbrirPopup = document.getElementById('btn-abrir-popup'),
-	overlay = document.getElementById('overlay'),
-	popup = document.getElementById('popup'),
-	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
 
-document.addEventListener('DOMContentLoaded', () =>{
-	overlay.classList.add('active');
-	popup.classList.add('active');
-});
+document.querySelector("#btn-contact").addEventListener("click", () =>{
+    const 	overlay = document.getElementById('overlay'),
+                popup = document.getElementById('popup');
+            overlay.classList.add('active');
+            popup.classList.add('active');
+})
 
-btnCerrarPopup.addEventListener('click', function(e){
+document.querySelector(".form").addEventListener("submit", (e)=>{
+    e.preventDefault();
+    document.querySelector(".form").reset();
+})
+
+document.getElementById('btn-cerrar-popup').addEventListener('click', function(e){
 	e.preventDefault();
-	overlay.classList.remove('active');
+    overlay.classList.remove('active');
 	popup.classList.remove('active');
 });
