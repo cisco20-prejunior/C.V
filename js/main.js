@@ -5,7 +5,6 @@
                 $distanciaIngles = Math.round($ingles.getBoundingClientRect().bottom),
                 $distanciaExcel = Math.round($excel.getBoundingClientRect().bottom),
                 $distanciaWord = Math.round($word.getBoundingClientRect().bottom);
-                console.log($distanciaIngles)
         if(!$word.classList.contains("habilidades__word__after" ) && $distanciaWord < window.innerHeight){
             $word.classList.add("habilidades__word__after");
         } else if ($word.classList.contains("habilidades__word__after")&& ($distanciaWord <  0 || $distanciaWord > window.innerHeight)) {
@@ -25,7 +24,9 @@
 
 document.querySelector("#btn-contact").addEventListener("click", () =>{
     const 	overlay = document.getElementById('overlay'),
-                popup = document.getElementById('popup');
+                popup = document.getElementById('popup'),
+                body = document.querySelector("#body");
+            body.style.overflow = "hidden";
             overlay.classList.add('active');
             popup.classList.add('active');
 })
@@ -36,7 +37,9 @@ document.querySelector(".form").addEventListener("submit", (e)=>{
 })
 
 document.getElementById('btn-cerrar-popup').addEventListener('click', function(e){
-	e.preventDefault();
+    const body = document.querySelector("#body");
+            body.style.overflow = "";
+    e.preventDefault();
     overlay.classList.remove('active');
 	popup.classList.remove('active');
 });

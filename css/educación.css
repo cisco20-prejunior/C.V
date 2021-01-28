@@ -176,7 +176,7 @@
 }
 @media screen and (max-width: 900px) {
     .educacion__primaria {
-        width: 95%;
+        width: 90%;
     }
     .primaria__parrafo {
         font-size: 1.5em;
