@@ -31,8 +31,19 @@ document.querySelector("#btn-contact").addEventListener("click", () =>{
             popup.classList.add('active');
 })
 
-document.querySelector(".form").addEventListener("submit", (e)=>{
+document.querySelector(".form").addEventListener("submit", async(e)=>{
     e.preventDefault();
+    const db = firebase.firestore(),
+            name = document.querySelector("#name").value,
+            email = document.querySelector("#email").value,
+            message = document.querySelector("#message").value;
+    console.log(name, email, message)
+    const response =  await db.collection("propuestas").doc().set({
+        name,
+        email,
+        message
+    })
+    console.log(response)
     document.querySelector(".form").reset();
 })
 
