@@ -48,7 +48,6 @@
     width: 90%;
     border-bottom: 15px rgb(22, 42, 153) solid;
     border-bottom-right-radius: 15px;
-    box-shadow: 0 0 20px 2px rgb(102, 119, 243);
     -webkit-animation: progress-bar 0.5s ease-in-out;
 }
 .habilidades__excel {
@@ -68,7 +67,6 @@
     width: 90%;
     border-bottom: solid rgb(39, 160, 23) 15px;
     border-bottom-right-radius: 100px;
-    box-shadow: 0 0 20px 2px rgb(44, 199, 86);
 }
 .habilidades__ingles {
     color: white;
@@ -87,7 +85,6 @@
     width: 90%;
     border-bottom: solid rgb(220, 47, 47) 15px;
     border-bottom-right-radius: 100px;
-    box-shadow: 0 0 20px 2px rgb(206, 92, 92);
 }
 @media screen and (max-width: 800px) {
     .importante__habilidades {

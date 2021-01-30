@@ -1,8 +1,3 @@
-@import url("educación.css");
-@import url("cursos.css");
-@import url("habilidades.css");
-@import url("laboral.css");
-@import url("formulario.css");
 :root {
     --img-height: 230px;
     --img-width: 200px;
