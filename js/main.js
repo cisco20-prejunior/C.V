@@ -31,19 +31,24 @@ document.querySelector("#btn-contact").addEventListener("click", () =>{
             popup.classList.add('active');
 })
 
+
 document.querySelector(".form").addEventListener("submit", async(e)=>{
     e.preventDefault();
     const db = firebase.firestore(),
             name = document.querySelector("#name").value,
             email = document.querySelector("#email").value,
             message = document.querySelector("#message").value;
-    console.log(name, email, message)
     const response =  await db.collection("propuestas").doc().set({
         name,
         email,
         message
     })
-    console.log(response)
+    if(response){
+        alert("No se pudo enviar el mensaje, por favor intentelo más tarde")
+        console.log(response)
+    } else{
+        alert("Mensaje enviado correctamente, nos pondremos en contacto pronto")
+    }
     document.querySelector(".form").reset();
 })
 

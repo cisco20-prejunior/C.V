@@ -7,15 +7,15 @@
         <title>C.V María del Rosario Fuentes</title>
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/index.css" />
-        <link rel="stylesheet" href="css/laboral.css">
-        <link rel="stylesheet" href="css/formulario.css">
-        <link rel="stylesheet" href="css/cursos.css">
-        <link rel="stylesheet" href="css/educación.css">
-        <link rel="stylesheet" href="css/habilidades.css">
+        <link rel="stylesheet" href="css/laboral.css" />
+        <link rel="stylesheet" href="css/formulario.css" />
+        <link rel="stylesheet" href="css/cursos.css" />
+        <link rel="stylesheet" href="css/educación.css" />
+        <link rel="stylesheet" href="css/habilidades.css" />
         <!-- Font Awesome -->
         <script
-        src="https://kit.fontawesome.com/65b1cfe81d.js"
-        crossorigin="anonymous"
+            src="https://kit.fontawesome.com/65b1cfe81d.js"
+            crossorigin="anonymous"
         ></script>
     </head>
     <body id="body">
@@ -134,7 +134,7 @@
                 <div class="experiencia__text">
                     <h3 class="experiencia__trabajo">
                         POLLERIA PIO RICO - ICA | ASISTENTE ADM/ CAJERA MAYO
-                        <br>
+                        <br />
                         2018 - ACTUALIDAD
                     </h3>
                     <p class="experiencia__trabajo__cont">
@@ -155,16 +155,40 @@
             <div class="popup" id="popup">
                 <form class="form">
                     <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"
-                    ><i class="fas fa-times"></i></a>
+                        ><i class="fas fa-times"></i
+                    ></a>
                     <h2>CONTÁCTAME</h2>
-                    <p type="Name:"><input  required pattern="[a-zA-Z ]{2,254}" type="text" id="name" placeholder="Escribe tu nombre aquí (solo letras)"></input></p>
-                    <p type="Email:"><input required type="email" id="email" placeholder="Dejanos saber tu correo aquí"></input></p>
-                    <p type="Message:"><input required autocomplete="off" type="text" id="message" placeholder="Dejanos un mensaje aquí."></input></p>
+                    <p class="Name:">
+                        <input
+                            required
+                            pattern="[a-zA-Z ]{2,254}"
+                            type="text"
+                            id="name"
+                            placeholder="Escribe tu nombre aquí (solo letras)"
+                        />
+                    </p>
+                    <p class="Email:">
+                        <input
+                            required
+                            type="email"
+                            id="email"
+                            placeholder="Dejanos saber tu correo aquí"
+                        />
+                    </p>
+                    <p class="Message:">
+                        <input
+                            required
+                            autocomplete="off"
+                            type="text"
+                            id="message"
+                            placeholder="Dejanos un mensaje aquí."
+                        />
+                    </p>
                     <button type="submit" id="btn-send">Enviar mensaje</button>
                 </form>
             </div>
         </div>
-                <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
 
         <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -172,22 +196,21 @@
         <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
 
-
         <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-            apiKey: "AIzaSyAHVSbuxbs2KjjILc5ejlAnGo0qBNJUFFc",
-            authDomain: "cv-maria-fuentes.firebaseapp.com",
-            projectId: "cv-maria-fuentes",
-            storageBucket: "cv-maria-fuentes.appspot.com",
-            messagingSenderId: "240573690027",
-            appId: "1:240573690027:web:56212b54738cf9643107ee",
-            measurementId: "G-FZWTMHLC3K"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyAHVSbuxbs2KjjILc5ejlAnGo0qBNJUFFc",
+                authDomain: "cv-maria-fuentes.firebaseapp.com",
+                projectId: "cv-maria-fuentes",
+                storageBucket: "cv-maria-fuentes.appspot.com",
+                messagingSenderId: "240573690027",
+                appId: "1:240573690027:web:56212b54738cf9643107ee",
+                measurementId: "G-FZWTMHLC3K",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
         </script>
 
         <script src="js/main.js" type="module"></script>
